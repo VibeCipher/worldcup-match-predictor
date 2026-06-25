@@ -1,4 +1,3 @@
-# worldcup-match-predictor
 # World Cup Match Predictor
 
 Predicts international football match outcomes using historical form, head-to-head record, and venue context — trained on 49,000+ matches from 1872 to 2026, validated live against the 2026 FIFA World Cup.
