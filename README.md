@@ -1,6 +1,8 @@
 # World Cup Match Predictor
 
-Predicts international football match outcomes using historical form, head-to-head record, and venue context — trained on 49,000+ matches from 1872 to 2026, validated live against the 2026 FIFA World Cup.
+Predicts international football match outcomes using historical form, head-to-head record, and venue context — trained on 49,000+ **international matches** (covering all tournaments and friendlies, not just World Cups) from 1872 to 2026, validated live against the 2026 FIFA World Cup.
+
+> Note: the FIFA World Cup itself started in 1930. The 1872 date marks the first ever official international football match (Scotland vs England) — the training data spans all international matches since then, while validation is specifically against World Cup 2026 results.
 
 ---
 
