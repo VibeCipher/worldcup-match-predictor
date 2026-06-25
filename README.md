@@ -20,15 +20,14 @@ Predicts international football match outcomes using historical form, head-to-he
 The final prediction averages probabilities across all 3 trained models (Logistic Regression, Random Forest, XGBoost) into a single combined result, rather than reporting 3 separate numbers. Verified on the backtest: ensembling matches or beats every individual model and is never worse than the weakest one.
 
 ```
-Argentina vs Austria — predicted Argentina Win (ensemble)
-Actual result: Argentina 2-0 Austria ✅ Correct
+LIVE PREDICTION (genuinely unplayed match, made before kickoff):
 
-Colombia vs Portugal (June 27, unplayed) — predicted:
+Colombia vs Portugal — June 27, 2026, Miami Gardens
   Colombia Win: 37.9%  |  Portugal Win: 36.8%  |  Draw: 25.3%
-  (essentially a toss-up — first ever meeting, no head-to-head history)
+  (essentially a toss-up — first ever meeting, zero head-to-head history)
 ```
 
-Most misses are the model predicting a win when the actual result was a draw — a well-documented hard problem in football analytics; draws require very specific conditions that are difficult to capture from form data alone.
+The 48-match backtest includes one notable example: the model correctly predicted Argentina to beat Austria before checking the real result (Argentina won 2-0). Most misses across the backtest are the model predicting a winner when the actual result was a draw — a well-documented hard problem in football analytics; draws require very specific conditions that are difficult to capture from form data alone.
 
 ---
 
@@ -116,7 +115,7 @@ worldcup-predictor/
 
 ## Why this project
 
-Built during the 2026 FIFA World Cup to apply proper ML methodology — time-based validation, no data leakage, and honest backtesting against real outcomes — to a genuinely fun, verifiable problem. The Argentina vs Austria prediction was made and locked in before checking the actual result, and the walk-forward backtest validates the same methodology across every completed match in the tournament so far.
+Built during the 2026 FIFA World Cup to apply proper ML methodology — time-based validation, no data leakage, and honest backtesting against real outcomes — to a genuinely fun, verifiable problem. The headline prediction (Colombia vs Portugal) was generated for a match that genuinely hadn't been played yet, and the same methodology is validated across all 48 completed group stage matches in the walk-forward backtest.
 
 ---
 
